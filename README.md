@@ -8,24 +8,24 @@ AgletJS aims to fix the disconnect between the DOM and JS. Aglets work similarly
 
 
 ### For example, with the following code:
-<pre>
-	<form <b>ag-name="search"</b>>
+```HTML
+<form ag-name="search">
+	<label>
+		Search:
+		<input ag-name="terms" type="text"/>
+	</label>
+	<div ag-name="options">
 		<label>
-			Search:
-			<input <b>ag-name="terms"</b> type="text"/>
+			<input ag-name="exact" type="checkbox"/>
+			Match Exact Phrase
 		</label>
-		<div <b>ag-name="options"</b>>
-			<label>
-				<input <b>ag-name="exact"</b> type="checkbox"/>
-				Match Exact Phrase
-			</label>
-			<label>
-				<input <b>ag-name="regex"</b> type="checkbox"/>
-				Use Regular Expression
-			</label>
-		</div>
-	</form>
-</pre>
+		<label>
+			<input ag-name="regex" type="checkbox"/>
+			Use Regular Expression
+		</label>
+	</div>
+</form>
+```
 
 Your application will automatically have access to variables like `search.terms` and `search.options.exact`
 
