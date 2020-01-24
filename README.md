@@ -1,4 +1,4 @@
-#AgletJS
+# AgletJS
 
 [New Version!](https://github.com/lemmin/agletjs2)
 
@@ -7,25 +7,25 @@
 AgletJS aims to fix the disconnect between the DOM and JS. Aglets work similarly to jQuery objects, but with very few extra features. The main purpose of an Aglet is to provide a more concise, hierarchical structure for your application's variable references to DOM objects.
 
 
-###For example, with the following code:
-```
-<form ag-name="search">
-	<label>
-		Search:
-		<input ag-name="terms" type="text"/>
-	</label>
-	<div ag-name="options">
+### For example, with the following code:
+<pre>
+	<form <b>ag-name="search"</b>>
 		<label>
-			<input ag-name="exact" type="checkbox"/>
-			Match Exact Phrase
+			Search:
+			<input <b>ag-name="terms"</b> type="text"/>
 		</label>
-		<label>
-			<input ag-name="regex" type="checkbox"/>
-			Use Regular Expression
-		</label>
-	</div>
-</form>
-```
+		<div <b>ag-name="options"</b>>
+			<label>
+				<input <b>ag-name="exact"</b> type="checkbox"/>
+				Match Exact Phrase
+			</label>
+			<label>
+				<input <b>ag-name="regex"</b> type="checkbox"/>
+				Use Regular Expression
+			</label>
+		</div>
+	</form>
+</pre>
 
 Your application will automatically have access to variables like `search.terms` and `search.options.exact`
 
